@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(to right, #66ccff 0%, #ccccff 68%) no-repeat center/cover;
+    overflow:hidden;
+    min-height: 100vh;
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 1.9rem 3rem;
+
+}
+
+header nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3.7rem;
+}
+
+header nav ul li a{
+    color: #fff;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+    
+}
+
+.main-content{
+    overflow: hidden;
+}
+
+.section-content{
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content-left p{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+.content-left h4{
+    font-size: 1.9rem;
+    color: #666699;
+    font-weight: 600;
+   
+}
+
+.content-left .btn{
+    padding: 1rem 2rem;
+    background-color: #666699;
+    border-radius: 0.8rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.content-left .btn:hover{
+    box-shadow: 0 1px 6px #666699;
+
+}
+.content-rigth{
+    margin-top: 4rem;
+    margin-right: 6.9rem;
+
+}
+
+.content-rigth img{
+    width: 350px;
+    margin-bottom: 1rem;
+    
+    animation: float 1.8s infinite alternate;
+    
+}
+.content-rigth .shadow{
+    width: 309px;
+    height: 45px;
+    background: linear-gradient(to bottom, #ff99cc 0%, #3399ff 100%);
+    border-radius: 50%;
+    
+    margin: 0 auto ;
+    filter: blur(5px);
+    animation: shadow 1.8s infinite alternate;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+@keyframes shadow {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(.85,.85);
+    }
+}
